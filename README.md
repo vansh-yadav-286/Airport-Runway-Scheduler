@@ -5,6 +5,18 @@ Schedules landing and takeoff requests on up to 10 runways. Emergencies go first
 **Run it:** open `index.html` in any browser. No installation needed.
 **Tests:** `node tests/scheduler.test.js`
 
+### Python implementation
+
+The browser demo remains JavaScript, but its scheduling core is also available in
+dependency-free Python at `python/airport_scheduler.py`. Run its checks with:
+
+```bash
+python3 -m unittest tests/test_scheduler.py
+```
+
+Use it from Python with `from airport_scheduler import RunwayScheduler` after
+adding the `python/` directory to your module path.
+
 ---
 
 ## 1. Problem → data structure
